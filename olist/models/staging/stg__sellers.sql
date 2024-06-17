@@ -1,0 +1,1 @@
+SELECT * FROM {{ source('db_olist', 'sellers') }}

@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: db_olist
+    database: db_olist
+    schema: public
+    tables:
+      - name: orders
+      - name: customers
+      - name: geolocation
+      - name: order_items
+      - name: order_payments
+      - name: order_reviews
+      - name: product_category_name_translation
+      - name: products
+      - name: sellers
