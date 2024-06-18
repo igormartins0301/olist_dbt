@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: stg__customers
+    description: Staging table for the customers dataset from Olist
+    columns:
+      - name: customer_id
+        description: Unique identifier for the customer
+        tests:
+          - unique
+          - not_null
+      - name: customer_unique_id
+        description: Unique identifier for the customer (alternate)
+      - name: customer_zip_code_prefix
+        description: Prefix of the customer's zip code
+      - name: customer_city
+        description: City where the customer is located
+      - name: customer_state
+        description: State where the customer is located

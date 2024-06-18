@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: stg__order_payments
+    description: "Staging table for order payments"
+    columns:
+      - name: order_id
+        description: "Unique identifier for the order"
+        tests:
+          - not_null
+        data_type: string
+      - name: payment_sequential
+        description: "Sequential number for the payment"
+        data_type: integer
+      - name: payment_type
+        description: "Type of payment (e.g., credit_card, etc.)"
+        data_type: string
+        tests:
+          - accepted_values:
+              values:
+                [
+                  "not_defined",
+                  "boleto",
+                  "debit_card",
+                  "voucher",
+                  "credit_card",
+                ]
+      - name: payment_installments
+        description: "Number of installments for the payment"
+        data_type: integer
+      - name: payment_value
+        description: "Value of the payment"
+        data_type: decimal
