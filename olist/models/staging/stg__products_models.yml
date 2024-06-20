@@ -1,0 +1,31 @@
+models:
+  - name: stg__products
+    description: 'Staging table for products'
+    columns:
+      - name: product_id
+        data_type: string
+        description: 'Unique identifier for the product'
+      - name: product_category_name
+        data_type: string
+        description: 'Name of the product category'
+      - name: product_name_lenght
+        data_type: integer
+        description: 'Length of the product name'
+      - name: product_description_lenght
+        data_type: integer
+        description: 'Length of the product description'
+      - name: product_photos_qty
+        data_type: integer
+        description: 'Number of product photos'
+      - name: product_weight_g
+        data_type: integer
+        description: 'Weight of the product in grams'
+      - name: product_length_cm
+        data_type: integer
+        description: 'Length of the product in centimeters'
+      - name: product_height_cm
+        data_type: integer
+        description: 'Height of the product in centimeters'
+      - name: product_width_cm
+        data_type: integer
+        description: 'Width of the product in centimeters'

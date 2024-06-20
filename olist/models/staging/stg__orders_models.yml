@@ -1,0 +1,28 @@
+models:
+  - name: stg__orders
+    description: 'Staging table for orders'
+    columns:
+      - name: order_id
+        data_type: string
+        description: 'Unique identifier for the order'
+      - name: customer_id
+        data_type: string
+        description: 'Customer ID associated with the order'
+      - name: order_status
+        data_type: string
+        description: 'Current status of the order'
+      - name: order_purchase_timestamp
+        data_type: timestamp
+        description: 'Timestamp when the order was purchased'
+      - name: order_approved_at
+        data_type: timestamp
+        description: 'Timestamp when the order was approved'
+      - name: order_delivered_carrier_date
+        data_type: timestamp
+        description: 'Timestamp when the order was delivered by the carrier'
+      - name: order_delivered_customer_date
+        data_type: timestamp
+        description: 'Timestamp when the order was delivered to the customer'
+      - name: order_estimated_delivery_date
+        data_type: timestamp
+        description: 'Estimated delivery date for the order'

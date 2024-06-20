@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: marts_source
+    database: db_olist
+    schema: marts
+    tables:
+      - name: orders

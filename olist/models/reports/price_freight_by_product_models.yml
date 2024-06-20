@@ -1,0 +1,17 @@
+models:
+  - name: price_freight_by_product
+    description: 'Price and freight by product'
+    columns:
+      - name: product_id
+        data_type: string
+        description: 'Unique identifier for the product'
+      - name: avg_price
+        data_type: float
+        description: 'Average price of the product'
+      - name: avg_freight
+        data_type: float
+        description: 'Average freight cost for the product'
+      - name: avg_perc_freight_cost
+        data_type: float
+        description: 'Average percentage of freight cost compared to the product price'
+
