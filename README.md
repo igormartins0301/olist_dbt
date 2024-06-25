@@ -19,4 +19,4 @@ Usando o dbt, nós:
 - **MARTS**: Agregação de tabelas por assunto, facilitando a manipulação das áreas de negócios, exemplo: uma tabela com todas as informações relacionadas aos pedidos
 - **REPORTS**: Tabelas com visualizações únicas que alimentam BI. exemplo: Média de preço e frete por produto.
 
-![image](/dbt-dat.png)
+![image](/dbt-dag.png)
