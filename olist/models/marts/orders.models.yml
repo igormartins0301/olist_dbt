@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: orders
+    description: This model contains order data
+    columns:
+      - name: order_id
+        description: Unique identifier for each order
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Identifier for the customer who placed the order
+      - name: order_status
+        description: Current status of the order (e.g. delivered, canceled)
+      - name: order_purchase_timestamp
+        description: Date and time when the order was placed
+      - name: order_approved_at
+        description: Date and time when the order was approved
+      - name: order_delivered_carrier_date
+        description: Date when the order was delivered to the carrier
+      - name: order_delivered_customer_date
+        description: Date when the order was delivered to the customer
+      - name: order_estimated_delivery_date
+        description: Estimated delivery date for the order
+      - name: payment_sequential
+        description: Sequential number for the payment
+      - name: payment_type
+        description: Type of payment used (e.g. credit card, boleto)
+      - name: payment_installments
+        description: Number of installments for the payment
+      - name: payment_value
+        description: Total value of the payment
+      - name: review_id
+        description: Unique identifier for each review
+      - name: review_score
+        description: Score given by the customer for the order (1-5)
+      - name: review_comment_title
+        description: Title of the review comment
+      - name: review_comment_message
+        description: Message of the review comment
+      - name: comment_title_pontuation
+        description: Pontuation of the review comment title
+      - name: review_creation_date
+        description: Date when the review was created
+      - name: order_item_id
+        description: Unique identifier for each order item
+      - name: product_id
+        description: Identifier for the product ordered
+      - name: seller_id
+        description: Identifier for the seller who sold the product
+      - name: shipping_limit_date
+        description: Limit date for shipping the order
+      - name: price
+        description: Price of the product
+      - name: freight_value
+        description: Value of the freight
+      - name: num_items
+        description: Number of items ordered
+      - name: creation_date
+        description: Date when the order was created
