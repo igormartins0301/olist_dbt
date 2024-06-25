@@ -4,7 +4,7 @@ select
     avg(freight_value) as avg_freight,
     (avg(freight_value) / avg(price)) * 100 avg_perc_freight_cost
 from
-    {{ source('marts_source', 'orders') }}
+    {{ ref('orders')}}
 where
     product_id is not null
 group by
